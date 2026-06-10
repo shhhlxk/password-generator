@@ -1,29 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #121212;
-    color: white;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-.container {
-    background: #1f1f1f;
-    padding: 20px;
-    border-radius: 12px;
-    width: 320px;
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:20px;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+.container{
+width:100%;
+max-width:420px;
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 0 30px rgba(0,255,255,0.25);
+color:white;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+.password-box{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+.password-box input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+.password-box button{
+padding:12px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.copy-btn{
+background:#06b6d4;
+}
+
+.generate-btn{
+background:#22c55e;
+}
+
+#length{
+width:100%;
+margin:10px 0;
+}
+
+label{
+display:block;
+margin-top:10px;
+}
+
+.strength{
+margin-top:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+#copied{
+color:#22c55e;
+text-align:center;
+margin-top:10px;
+}
+
+@media(max-width:500px){
+.container{
+padding:20px;
+}
 }
